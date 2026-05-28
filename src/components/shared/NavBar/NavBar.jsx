@@ -23,21 +23,9 @@ const NavBar = () => {
 
 
 
-{/* <NavLink
-    to="/"
-    className={({ isActive }) =>
-        isActive
-            ? "bg-amber-500 text-white px-4 py-2 rounded"
-            : "bg-purple-700 text-white px-4 py-2 rounded"
-    }
->
-    MyName  
-</NavLink>
- */}
-
                 </>;
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 my-4 w-10/12 mx-auto">
   <div className="flex-1">
     <a className="font-bold text-2xl text-[#244D3F]"><span className="text-[#1F2937]">Keen</span>Keeper</a>
   </div>

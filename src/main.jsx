@@ -7,13 +7,14 @@ import Home from './components/Pages/Home/Home';
 import Timeline from './components/Pages/Timeline/Timeline';
 import State from './components/Pages/State/State';
 import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
+import CardDetails from './components/Pages/UI/CardDetails/CardDetails';
 const router=createBrowserRouter([
   {
     path:'/',
     Component: MainLayout,
     children:[
         {
-          path:'/',
+          index:true,
           Component:Home,
         },
         {
@@ -23,6 +24,11 @@ const router=createBrowserRouter([
         {
           path:'State',
           Component:State
+        },
+        {
+          path: '/cardDetails/:friendId',
+          Component: CardDetails,
+          loader: ()=> fetch('/Data.json'),
         }
     ],
     errorElement:<ErrorPage></ErrorPage>

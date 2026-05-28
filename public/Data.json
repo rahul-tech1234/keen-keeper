@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2026-06-10"
+  },
+  {
+    "id": 2,
+    "name": "Emma Watson",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "email": "emma@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "gym"],
+    "bio": "Former office colleague and fitness partner.",
+    "goal": 10,
+    "next_due_date": "2026-06-15"
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "michael@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "gaming"],
+    "bio": "School best friend. Plays online games together.",
+    "goal": 15,
+    "next_due_date": "2026-06-01"
+  },
+  {
+    "id": 4,
+    "name": "Sophia Lee",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "email": "sophia@example.com",
+    "days_since_contact": 2,
+    "status": "active",
+    "tags": ["travel", "photography"],
+    "bio": "Travel buddy who loves taking nature photos.",
+    "goal": 7,
+    "next_due_date": "2026-06-18"
+  },
+  {
+    "id": 5,
+    "name": "Daniel Smith",
+    "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+    "email": "daniel@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["football", "neighbor"],
+    "bio": "Neighbor and weekend football teammate.",
+    "goal": 14,
+    "next_due_date": "2026-06-12"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Johnson",
+    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "email": "olivia@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["music", "concert"],
+    "bio": "Met at a music festival. Loves rock concerts.",
+    "goal": 10,
+    "next_due_date": "2026-06-03"
+  },
+  {
+    "id": 7,
+    "name": "James Wilson",
+    "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+    "email": "james@example.com",
+    "days_since_contact": 1,
+    "status": "active",
+    "tags": ["coding", "tech"],
+    "bio": "Coding friend from a hackathon event.",
+    "goal": 7,
+    "next_due_date": "2026-06-20"
+  },
+  {
+    "id": 8,
+    "name": "Ava Martinez",
+    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "email": "ava@example.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["book club", "coffee"],
+    "bio": "Book club friend who enjoys café discussions.",
+    "goal": 14,
+    "next_due_date": "2026-06-11"
+  }
+]

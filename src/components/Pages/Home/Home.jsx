@@ -1,9 +1,10 @@
+import FixedCard from "../../FixedCard/FixedCard";
+
 const Home = () => {
     return (
         <div>
-            home
+            <FixedCard></FixedCard>
         </div>
     );
 };
-
 export default Home;
