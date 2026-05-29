@@ -6,6 +6,7 @@ const FriendProvider = ({children}) => {
     const [textFriends,setTextFriends]=useState([]);
     const [videoFriends,setVideoFriends]=useState([]);
     const handleCallButton=(myFriend)=>{
+        //console.log(myFriend);
     toast.success(`Call with ${myFriend.name}`);
     setCallFriends([...callFriends, myFriend]);
     }
@@ -26,7 +27,7 @@ const data={
         handleTextButton,
         videoFriends,
         setVideoFriends,
-        handleVideoButton
+        handleVideoButton,
     }
 
     return (

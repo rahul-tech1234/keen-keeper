@@ -1,9 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FriendContext } from "../../Context/FriendContext";
 import Image from "../../../assets/call.png";
 
-const Call = () => {
+const Call = ({filterType}) => {
     const {callFriends}=useContext(FriendContext);
+    const myFriend =callFriends.map(friend=> friend);
+    console.log(myFriend);
+    const [filterCallFriend,setFilterCallFriend]=useState([]);
+    useEffect(()=>{
+        if (filterType) {
+            if (filterType==='call') {
+              console.log(filterCallFriend);  
+            }else if (filterType==='text') {
+                ///
+            }else{
+//
+            }
+        }
+    })
     return (
         <div className="space-y-3">
                         {
