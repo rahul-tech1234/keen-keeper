@@ -27,8 +27,7 @@ const NavBar = () => {
     return (
         <div className="navbar bg-base-100 my-4 w-10/12 mx-auto">
   <div className="flex-1">
-    <a className="font-bold text-2xl text-[#244D3F]"><span className="text-[#1F2937]">Keen</span>Keeper</a>
-  </div>
+    <a className="font-bold text-5xl text-[#244D3F]"><span className="text-[#1F2937]">Keen</span>Keeper</a>  </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
       {Links}
