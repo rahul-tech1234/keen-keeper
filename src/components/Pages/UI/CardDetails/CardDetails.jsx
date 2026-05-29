@@ -4,29 +4,24 @@ import { Link, useLoaderData, useParams } from "react-router";
 import Call from "../../../../assets/call.png";
 import Video from "../../../../assets/video.png";
 import Text from "../../../../assets/text.png";
-import { toast } from "react-toastify";
-import { useState } from "react";
+import { useContext } from "react";
+import { FriendContext } from "../../../Context/FriendContext";
+
 const CardDetails = () => {
+    const {handleCallButton,handleTextButton,handleVideoButton}=useContext(FriendContext);
     const {friendId} =useParams();
     const AllFriends=useLoaderData();
     const myFriend=AllFriends.find(friend=> friend.id==friendId);
     //console.log(myFriend);
     const {picture,name,status,tags,bio,email,days_since_contact,goal,next_due_date}=myFriend;
-  //console.log(myFriend);
-  const [callFriends,setCallFriends]=useState([]);
+  
+  
 const Buttons=<>
 <button className="btn text-[#1F2937] w-full bg-white"><RiNotificationSnoozeLine className="inline-block"/>Snooze 2 weeks</button>
         <button className="btn text-[#1F2937] w-full bg-white"><FiArchive className="inline-block"/> Archive</button>
         <button className="btn text-[#EF4444] w-full bg-white"> <RiDeleteBin5Line className="inline-block" />Delete</button>
         
 </>
-const handleCallButton=(myFriend)=>{
-    toast.success(`Text with ${name}`);
-    
-    //const isCallWithFriend=callFriends.find(friend=>(friend.id==myFriend.id));
-    setCallFriends([...callFriends, myFriend]);
-    console.log(callFriends);
-}
 
     return (
         <>
@@ -93,15 +88,15 @@ const handleCallButton=(myFriend)=>{
                     <h2 className="text-[#64748B] text-[18px font-regular]">Call</h2>
                 </Link>
 
-                <div className="shadow card text-center flex items-center justify-center flex-col bg-gray-200">
+                <Link onClick={()=>handleTextButton(myFriend)} className="shadow card text-center flex items-center justify-center flex-col bg-gray-200">
                     <img src={Text} alt="" className="mx-auto w-15 py-4"/>
                     <h2 className="text-[#64748B] text-[18px font-regular]">Text</h2>
-                </div>
+                </Link>
 
-                <div className="shadow card text-center flex items-center justify-center flex-col bg-gray-200">
+                <Link onClick={()=>handleVideoButton(myFriend)} className="shadow card text-center flex items-center justify-center flex-col bg-gray-200">
                     <img src={Video} alt="" className="mx-auto w-15 py-4"/>
                     <h2 className="text-[#64748B] text-[18px font-regular]">Video</h2>
-                </div>
+                </Link>
 
             </div>
 

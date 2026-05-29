@@ -8,7 +8,7 @@ import Timeline from './components/Pages/Timeline/Timeline';
 import State from './components/Pages/State/State';
 import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
 import CardDetails from './components/Pages/UI/CardDetails/CardDetails';
-import FriendContextProvider from './components/Context/FriendContextProvider';
+import FriendProvider from './components/Context/FriendProvider';
 const router=createBrowserRouter([
   {
     path:'/',
@@ -39,8 +39,8 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <FriendContextProvider>
-    <RouterProvider router={router}></RouterProvider>
-    </FriendContextProvider>
+    <FriendProvider>
+       <RouterProvider router={router}></RouterProvider>
+    </FriendProvider>
   </StrictMode>,
 )
